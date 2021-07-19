@@ -1,7 +1,7 @@
 function getAuthType() {
-  return FacebookCore.getAuthType();
+  return LinkedInCore.getAuthType();
 }
 
 function isAdminUser() {
-  return FacebookCore.isAdminUser();
+  return LinkedInCore.isAdminUser();
 }

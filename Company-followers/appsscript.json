@@ -4,23 +4,23 @@
   "dependencies": {
     "libraries": [
       {
-        "userSymbol": "FacebookCore",
+        "userSymbol": "LinkedInCore",
         "version": "0",
-        "libraryId": "13iwi4l09wdwCsfkS18k8Kj4iSJ1Sk0t7mc0rjs5EgDIH_Pg2m0IZ-dLT",
+        "libraryId": "1MSY23M-2V9rlhMsrrbTkrwZFmg7sxrBSwrxtCP10CPFRgXCvWPrrfbBv",
         "developmentMode": true
       }
     ]
   },
   "dataStudio": {
-    "name": "Facebook Page",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png",
+    "name": "LinkedIn Company Followers",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     "company": "Chiogros",
     "companyUrl": "https://github.com/Chiogros",
-    "addonUrl": "https://github.com/Chiogros/Facebook-connectors-for-GDataStudio/Page",
-    "supportUrl": "https://github.com/Chiogros/Facebook-connectors-for-GDataStudio/issues",
-    "description": "Get Facebook Page data, for free.",
+    "addonUrl": "https://github.com/Chiogros/LinkedIn-connectors-for-GDataStudio/tree/main/Company-followers",
+    "supportUrl": "https://github.com/Chiogros/LinkedIn-connectors-for-GDataStudio/issues",
+    "description": "Get LinkedIn Company followers count, for free.",
     "sources": [
-      "facebook"
+      "linkedin"
     ]
   }
 }

@@ -7,9 +7,9 @@
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     "company": "Chiogros",
     "companyUrl": "https://github.com/Chiogros",
-    "addonUrl": "https://github.com/Chiogros/LinkedIn-connectors-for-GDataStudio/Core",
+    "addonUrl": "https://github.com/Chiogros/LinkedIn-connectors-for-GDataStudio/tree/main/Core",
     "supportUrl": "https://github.com/Chiogros/LinkedIn-connectors-for-GDataStudio/issues",
-    "description": "Core LinkedI connector, used by other connectors. Do not use it.",
+    "description": "Core LinkedIn connector, used by other connectors. Do not use it.",
     "sources": [
       "linkedin"
     ]

@@ -1,4 +1,4 @@
-function fetchDataFromAPI(request, fields) {
+function fetchDataFromAPI(request, endpoint) {
 
   // will contains all fetched rows
   var parsedResponses = new Object();
@@ -6,22 +6,14 @@ function fetchDataFromAPI(request, fields) {
   try {
 
     // Fetch data
-    var httpResponses = connect(fields, request);
-    
-    httpResponses.forEach(function(httpResponse) {
-      
-      var parsedHttpResponse = JSON.parse(httpResponse);
+    var response = connect(endpoint, request);
 
-      for (const [key, value] of Object.entries(parsedHttpResponse)) {
-        parsedResponses[key] = value;
-      }
-      
-    });
+    parsedResponses = JSON.parse(response);
     
   } catch (e) {
     cc.newUserError()
       .setDebugText('Error fetching data from API. ' + e)
-      .setText('There was an error communicating with Facebook. Try again later.')
+      .setText('There was an error communicating with LinkedIn. Try again later.')
       .throwException();
   }
 

@@ -1,9 +1,9 @@
 var cc = DataStudioApp.createCommunityConnector();
 
-function getSchema(request, rawFields, fieldsToRetrieve) {
+function getSchema(request, rawFields, endpoint) {
 
   // Check credentials
-  checkForValidCredentials(fieldsToRetrieve, request);
+  checkForValidCredentials(endpoint, request);
 
   // return fields to retrieve
   var fields = rawFields.build();
@@ -38,20 +38,18 @@ function getConfig() {
   return config.build();
 }
 
-function connect(fields, request) {
+function connect(endpoint, request) {
 
-  var httpResponses = new Array();
-  var numberOfFieldsToRetrieve = 50;
-  
-  // iterate over fields to retrieve because GDS has a limit URL size
-  for (var i = 0 ; i < fields.length ; i += numberOfFieldsToRetrieve) {
+  var url = 'https://api.linkedin.com/v2/' + endpoint[0] + request.configParams.object_ID + endpoint[1];
+  var options = {
+    'method' : 'GET',
+    'headers': {
+      'Content-Type': 'application/json',
+      Authorization: 'Bearer ' + request.configParams.bearer_token
+    },
+    'muteHttpExceptions':true
+  };
 
-    var url = 'https://graph.facebook.com/v11.0/' + request.configParams.object_ID + '?fields=' + fields.slice(i, i + numberOfFieldsToRetrieve) + '&access_token=' + request.configParams.bearer_token;
-
-    // Fetch data
-    var httpResponse = UrlFetchApp.fetch(url);
-    httpResponses.push(httpResponse);
-  }
-
-  return httpResponses;
+  // Fetch data
+  return UrlFetchApp.fetch(url, options);
 }

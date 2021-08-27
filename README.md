@@ -58,7 +58,6 @@ var endpoint = ['networkSizes/urn:li:organization:', '?edgeType=CompanyFollowedB
 ```
 
 2. Put fetchable fields from API
-They can be the same as the optionalFields you put before.
 ```javascript
 // fields.gs
 function getFields(request) {

@@ -40,7 +40,8 @@ Child connectors (like Channels-data) use Core functions and have functions spec
 2. Create an LinkedIn app
 3. When you're on your app overview, go to Products tab and add "Marketing Developer Platform" product
 4. Go to Auth tab and set an "Authorized redirect URLs for your app" like "https://access_token". It will be useful to get back your access token
-5. I do not remember how I did it...
+5. Follow [this tutorial](https://docs.microsoft.com/fr-fr/linkedin/shared/authentication/generate-an-access-token?context=linkedin/marketing/context) from the documentation
+6. Use token to fill connector credentials
 
 ## How to create a new LinkedIn connector
 First, copy Company-followers connector as template.

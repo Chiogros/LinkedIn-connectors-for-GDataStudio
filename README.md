@@ -3,7 +3,7 @@ Google Data Studio connectors to fetch data from LinkedIn Marketing API.
 
 ## Connectors organization
 There's a main connector called "Core": it retrieve and handle data to bring it properly for GDS and set authentication method.
-Child connectors (like Channels-data) use Core functions and have functions specific for their API endpoint.
+Child connectors (like Company-followers) use Core functions and have functions specific for their API endpoint.
 
 ## How to use them on GDS
 

@@ -2,14 +2,14 @@
 Google Data Studio connectors to fetch data from LinkedIn Marketing API.
 
 ## Connectors organization
-There's a main connector called "Core": it retrieves and handles data to bring it properly for GDS and set authentication method.
-Children connectors (like Company-followers) use Core functions and have functions specific for their API endpoint.
+There is a main connector called `Core`: it retrieves and handles data to bring it properly for GDS and it also sets the authentication method.
+Children connectors (like Company-followers) use Core functions and use specific functions they have for their API endpoint.
 
 ## How to use them on GDS
 
 ### Setup Core connector
 1. Go to [Google Apps Script](https://script.google.com)
-2. Create new project
+2. Create a new project
 3. Name it
 4. Go to project settings
 5. Check `Display appsscript.json manifest file`
@@ -19,12 +19,12 @@ Children connectors (like Company-followers) use Core functions and have functio
 
 ### Setup child connector
 1. Go to [Google Apps Script](https://script.google.com)
-2. Create new project
+2. Create a new project
 3. Name it
 4. Go to project settings
 5. Check `Display appsscript.json manifest file`
 7. Go back to code window
-8. Create files and set code for child connector
+8. Create files and set code for the child connector
 9. In `appsscript.json`, change `Dependencies` > `Libraries` > `LibraryID` to the Core script ID you took note
 10. Deploy it (easiest by going through `Use old editor` button > `Publish` > `Publish from manifest file`)
 

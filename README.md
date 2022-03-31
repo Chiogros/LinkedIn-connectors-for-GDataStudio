@@ -106,6 +106,3 @@ function responseToRows(requestedFields, response) {
   
 }
 ```
-
-## If needed
-Send me an email at alexandre.bouijoux@gmail.com :)
